@@ -7,7 +7,7 @@
   --blue-3: #1262dd;
   --blue-4: #094ea1;
   --blue-5: #032c6a;
-  --orange: #ff7b34;
+  --orange: rgb(255, 123, 52);
   --orange-2: #ffb934;
   --green: #1ebdbd;
 }
@@ -39,12 +39,13 @@ a {
 
 @keyframes spreadOut {
   0% {
-    transform: scale(1);
-    opacity: 1;
+    box-shadow: none;
   }
   100% {
-    transform: scale(1.3);
-    opacity: 0;
+    box-shadow: 0 0 40px rgba(255, 123, 52, 10%),
+      0 0 50px rgba(255, 123, 52, 10%), 0 0 60px rgba(255, 123, 52, 10%),
+      0 0 70px rgba(255, 123, 52, 10%), 0 0 80px rgba(255, 123, 52, 10%),
+      0 0 90px rgba(255, 123, 52, 10%), 0 0 100px rgba(255, 123, 52, 10%);
   }
 }
 
@@ -116,6 +117,7 @@ a {
   color: #fff;
   transition: all ease 0.3s;
   animation: shake ease 0.3s infinite alternate-reverse;
+  font-weight: 600;
 }
 
 .search-contact-btn-container:hover {
@@ -149,7 +151,7 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  height: 120vh;
+  padding: 250px 0 0;
 }
 
 #banner .container {
@@ -183,6 +185,7 @@ a {
   margin: 0 20px;
   background-color: var(--orange);
   transition: all ease 0.3s;
+  font-weight: 600;
 }
 
 #banner .btn-container .btn-item:hover {
@@ -191,7 +194,7 @@ a {
 }
 
 #banner .swiper {
-  width: 40vw;
+  width: 1000px;
   overflow: visible;
 }
 
@@ -218,10 +221,20 @@ a {
 /* START SERVICE */
 #service {
   margin-top: 100px;
+  padding-bottom: 150px;
+  /* background-image: url("../images/background2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  position: relative;
 }
 
-#service .container-fluid {
-  height: 100vh;
+#service > img {
+  position: absolute;
+  z-index: -1;
+  top: -30%;
+  left: 0;
+  width: 100%;
 }
 
 #service h4 {
@@ -230,6 +243,7 @@ a {
   text-transform: uppercase;
   color: var(--blue-4);
   font-weight: 800;
+  margin-bottom: 170px;
 }
 
 #service h4 i {
@@ -241,29 +255,40 @@ a {
 }
 
 #service .service-container {
-  margin-top: 170px;
   display: flex;
   justify-content: space-between;
 }
 
+#service .service-tag-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0.8;
+}
+
 #service .service-container .service-tag-item {
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 250px;
-  height: 50px;
-  margin: 10px 0;
+  padding: 15px 0;
+  margin: 5px 0;
   transition: all ease 0.3s;
   cursor: pointer;
   position: relative;
 }
 
-#service .service-container .service-tag-item:hover,
-#service .service-container .service-tag-item.active {
-  width: 300px;
+#service .service-container .service-tag-item:hover {
+  /* width: 300px; */
+  transform: scale(1.1);
 }
+
+#service .service-container .service-tag-item.active {
+  margin: 20px 0;
+  transform: scale(1.4);
+}
+
 #service .service-container .service-tag-item:nth-child(1) {
   background-color: var(--blue-5);
   z-index: 4;
@@ -288,15 +313,15 @@ a {
   margin: 0;
   color: #fff;
   font-size: 18px;
-  transition: all ease 0.3s;
+  transition: all ease 0.15s;
 }
 #service .service-container .service-tag-item:hover p,
 #service .service-container .service-tag-item.active p {
-  font-size: 22px;
+  font-weight: 600;
 }
 
 #service .service-card-container {
-  flex: 1;
+  flex: 2.5;
   margin-left: 30px;
   position: relative;
 }
@@ -312,13 +337,14 @@ a {
   border-bottom-left-radius: 30px;
   top: 50%;
   transform: translateY(-50%);
-  gap: 30px;
+  gap: 80px;
   transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.65s;
 }
 
 #service .service-card-container .service-card-item:nth-child(1) {
   left: 0;
   background-color: var(--blue-5);
+  gap: 50px;
 }
 
 #service .service-card-container .service-card-item:nth-child(2) {
@@ -337,12 +363,14 @@ a {
   left: 91%;
   z-index: 3;
   background-color: var(--orange-2);
+  gap: 90px;
 }
 
 #service .service-card-container .service-card-item:nth-child(5) {
   left: 94%;
   z-index: 4;
   background-color: var(--green);
+  gap: 90px;
 }
 
 #service .service-card-container .service-card-item .service-card-item-img {
@@ -358,6 +386,8 @@ a {
 #service .service-card-item-content li {
   color: #fff;
   text-align: left;
+  margin: unset;
+  font-weight: 600;
 }
 
 #service .service-card-item-content ul {
@@ -396,7 +426,7 @@ a {
 /* START CATEGORY */
 
 #category {
-  margin-top: 20px;
+  /* margin-top: 200px; */
 }
 
 #category h4 {
@@ -451,13 +481,18 @@ a {
 
 #testimonials {
   margin-top: 80px;
+  background-image: url("../images/Group\ 353.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
 }
 
 #testimonials h4 {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
-  color: var(--blue-4);
+  color: #fff;
   font-weight: 800;
 }
 
@@ -467,10 +502,11 @@ a {
   padding: 20px;
   border-radius: 30px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 20%);
+  color: #fff;
 }
 
 #testimonials .swiper {
-  width: 40vw;
+  width: 700px;
   overflow: visible;
   margin-top: 80px;
 }
@@ -492,6 +528,7 @@ a {
   padding: 30px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 10%);
   border-radius: 10px;
+  background-color: #fff;
 }
 
 #testimonials .swiper-slide .testimonials-title-container {
@@ -526,6 +563,10 @@ a {
 /* START PROJECT */
 #project {
   margin-top: 80px;
+  background-image: url("../images/background1.png");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #project h4 {
@@ -555,13 +596,71 @@ a {
 }
 
 #project .project-item-img {
-  width: 100%;
+  width: fit-content;
   height: 500px;
   overflow: hidden;
   border: 1px solid var(--blue-4);
   margin-bottom: 20px;
   border-radius: 10px;
   transition: all ease 0.3s;
+  position: relative;
+}
+
+#project .project-item-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all ease 1s;
+}
+
+#project .project-item-img:hover::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#project .project-item-img .demo-btn,
+#project .project-item-img .detail-btn {
+  color: #fff;
+  margin: 0;
+  background-color: var(--orange);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 30px;
+  position: absolute;
+  z-index: 1;
+  transition: left cubic-bezier(0.77, 0, 0.175, 1) 1s,
+    right cubic-bezier(0.77, 0, 0.175, 1) 1s,
+    transform cubic-bezier(0.77, 0, 0.175, 1) 1s, background-color ease 0.3s,
+    color ease 0.3s;
+}
+
+#project .project-item-img .demo-btn:hover,
+#project .project-item-img .detail-btn:hover {
+  background-color: #fff;
+  color: var(--orange);
+}
+
+#project .project-item-img:hover .demo-btn {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#project .project-item-img:hover .detail-btn {
+  right: 50%;
+  transform: translateX(50%);
+}
+
+#project .project-item-img .demo-btn {
+  top: 40%;
+  left: -40%;
+}
+
+#project .project-item-img .detail-btn {
+  bottom: 40%;
+  right: -40%;
 }
 
 #project .project-item-img:hover {
@@ -584,7 +683,9 @@ a {
   font-size: 25px;
   font-weight: 600;
   color: var(--blue-4);
-  margin-bottom: 5px;
+  display: block;
+  width: fit-content;
+  margin: 0px auto 5px;
 }
 
 #project .button {
@@ -624,21 +725,7 @@ a {
   border: 2px solid var(--blue-4);
   border-radius: 10px;
   padding: 30px;
-  position: relative;
   background-color: #fff;
-}
-
-#client-form .form-container::before {
-  content: "";
-  background-color: var(--blue-3);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  animation: spreadOut 0.8s ease infinite;
-  z-index: -1;
-  border-radius: 10px;
 }
 
 #client-form .form-container h4 {
@@ -673,10 +760,11 @@ a {
   padding: 8px;
   border-radius: 10px;
   width: 100%;
-  background-color: var(--blue-4);
+  background-color: var(--orange);
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
+  animation: shake 0.3s ease infinite alternate;
 }
 
 /* END FORM */
@@ -824,6 +912,21 @@ a {
 #footer ul li a i {
   font-size: 12px;
   margin-right: 5px;
+}
+
+#footer .toggle-container {
+  cursor: pointer;
+}
+
+#footer .toggle-container h4 {
+  font-weight: 700;
+  color: var(--blue-4);
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#footer .toggle {
+  display: none;
 }
 
 #footer p {
