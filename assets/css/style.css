@@ -8,6 +8,8 @@
   --blue-4: #094ea1;
   --blue-5: #032c6a;
   --orange: #ff7b34;
+  --orange-2: #ffb934;
+  --green: #1ebdbd;
 }
 
 * {
@@ -263,23 +265,23 @@ a {
   width: 300px;
 }
 #service .service-container .service-tag-item:nth-child(1) {
-  background-color: var(--blue-1);
+  background-color: var(--blue-5);
   z-index: 4;
 }
 #service .service-container .service-tag-item:nth-child(2) {
-  background-color: var(--blue-2);
+  background-color: var(--blue-4);
   z-index: 3;
 }
 #service .service-container .service-tag-item:nth-child(3) {
-  background-color: var(--blue-3);
+  background-color: var(--orange);
   z-index: 2;
 }
 #service .service-container .service-tag-item:nth-child(4) {
-  background-color: var(--blue-4);
+  background-color: var(--orange-2);
   z-index: 1;
 }
 #service .service-container .service-tag-item:nth-child(5) {
-  background-color: var(--blue-5);
+  background-color: var(--green);
 }
 
 #service .service-container .service-tag-item p {
@@ -316,31 +318,31 @@ a {
 
 #service .service-card-container .service-card-item:nth-child(1) {
   left: 0;
-  background-color: var(--blue-1);
+  background-color: var(--blue-5);
 }
 
 #service .service-card-container .service-card-item:nth-child(2) {
   left: 85%;
   z-index: 1;
-  background-color: var(--blue-2);
+  background-color: var(--blue-4);
 }
 
 #service .service-card-container .service-card-item:nth-child(3) {
   left: 88%;
   z-index: 2;
-  background-color: var(--blue-3);
+  background-color: var(--orange);
 }
 
 #service .service-card-container .service-card-item:nth-child(4) {
   left: 91%;
   z-index: 3;
-  background-color: var(--blue-4);
+  background-color: var(--orange-2);
 }
 
 #service .service-card-container .service-card-item:nth-child(5) {
   left: 94%;
   z-index: 4;
-  background-color: var(--blue-5);
+  background-color: var(--green);
 }
 
 #service .service-card-container .service-card-item .service-card-item-img {
@@ -379,6 +381,10 @@ a {
   display: block;
   width: fit-content;
   animation: shake ease 0.3s infinite alternate-reverse;
+}
+
+#service .service-card-container .service-card-item:nth-child(3) .button {
+  background-color: var(--blue-4);
 }
 
 #service .service-card-item-content .button i {
