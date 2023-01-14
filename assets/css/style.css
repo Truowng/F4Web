@@ -252,6 +252,7 @@ a {
   padding: 20px;
   border-radius: 30px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 20%);
+  background-color: #fff;
 }
 
 #service .service-container {
@@ -748,6 +749,7 @@ a {
   width: 100%;
   margin: 0px 0 20px;
   padding: 5px 0;
+  resize: none;
 }
 
 #client-form .form-container input:focus,
@@ -820,6 +822,10 @@ a {
   margin-top: 80px;
 }
 
+#faq .faq-content-container {
+  padding-left: 30px;
+}
+
 #faq .faq-img,
 #faq .faq-img img {
   width: 100%;
@@ -857,7 +863,7 @@ a {
 #faq .faq-content-item .faq-question p span,
 #faq .faq-content-item .faq-question i {
   color: #ccc;
-  transition: all ease 0.2s;
+  transition: all ease 0.3s;
 }
 
 #faq .faq-content-item .faq-question:hover p,
@@ -869,8 +875,9 @@ a {
 }
 
 #faq .faq-content-item .faq-answer {
-  transition: all ease 0.3s;
-  display: none;
+  transition: all ease-in-out 0.3s;
+  max-height: 0;
+  opacity: 0;
 }
 
 #faq .faq-content-item.active .faq-question p {
@@ -882,7 +889,9 @@ a {
 }
 
 #faq .faq-content-item.active .faq-answer {
-  display: block;
+  max-height: 600px;
+  height: auto;
+  opacity: 1;
 }
 
 /* END FAQ */
@@ -914,15 +923,13 @@ a {
   margin-right: 5px;
 }
 
-#footer .toggle-container {
-  cursor: pointer;
-}
-
 #footer .toggle-container h4 {
   font-weight: 700;
   color: var(--blue-4);
   font-size: 20px;
   margin-top: 20px;
+  cursor: pointer;
+  width: fit-content;
 }
 
 #footer .toggle {
