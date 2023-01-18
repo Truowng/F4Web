@@ -10,6 +10,8 @@
   --orange: rgb(255, 123, 52);
   --orange-2: #ffb934;
   --green: #1ebdbd;
+  /* MOBILE */
+  --card-item-top-translate: 590px;
 }
 
 * {
@@ -18,7 +20,8 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+.content-wrap {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
@@ -136,6 +139,10 @@ a {
   left: 10%;
   box-shadow: 0 0 5px rgba(255, 255, 255, 20%);
   transition: all ease 0.3s;
+}
+
+.m-menu {
+  display: none;
 }
 
 /* END HEADER */
@@ -292,19 +299,15 @@ a {
 
 #service .service-container .service-tag-item:nth-child(1) {
   background-color: var(--blue-5);
-  z-index: 4;
 }
 #service .service-container .service-tag-item:nth-child(2) {
   background-color: var(--blue-4);
-  z-index: 3;
 }
 #service .service-container .service-tag-item:nth-child(3) {
   background-color: var(--orange);
-  z-index: 2;
 }
 #service .service-container .service-tag-item:nth-child(4) {
   background-color: var(--orange-2);
-  z-index: 1;
 }
 #service .service-container .service-tag-item:nth-child(5) {
   background-color: var(--green);
@@ -422,12 +425,20 @@ a {
   margin-left: 5px;
 }
 
+#m-service {
+  display: none;
+}
+
 /* END SERVICE */
 
 /* START CATEGORY */
 
 #category {
   /* margin-top: 200px; */
+}
+
+.m-category {
+  display: none;
 }
 
 #category h4 {
@@ -559,6 +570,10 @@ a {
   font-weight: 600;
 }
 
+#testimonials .swiper-pagination {
+  display: none;
+}
+
 /* END TESTIMONIALS */
 
 /* START PROJECT */
@@ -588,6 +603,13 @@ a {
 
 #project .row {
   margin-top: 80px;
+}
+
+.p-project {
+  display: block;
+}
+.m-project {
+  display: none;
 }
 
 #project .project-item {
@@ -794,6 +816,13 @@ a {
 
 #client-form .client-img img {
   width: 70%;
+}
+
+.p-client {
+  display: block;
+}
+.m-client {
+  display: none;
 }
 /* END CLIENT */
 
