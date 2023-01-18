@@ -148,6 +148,10 @@
     margin-top: 10px;
   }
 
+  #m-service .service-card-item-img {
+    text-align: center;
+  }
+
   #m-service
     .service-card-container
     .service-card-item
