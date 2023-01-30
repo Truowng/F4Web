@@ -456,3 +456,21 @@
   }
   /* END FOOTER */
 }
+
+@media (max-width: 400px) {
+  /* START BANNER */
+  #banner .btn-container .btn-item {
+    font-size: 14px;
+  }
+  /* END BANNER */
+
+  /* START SERVICE */
+  #m-service .service-card-item-content h4 {
+    font-size: 23px;
+  }
+
+  #m-service .service-container .service-tag-item p {
+    font-size: 14px;
+  }
+  /* END SERVICE */
+}
