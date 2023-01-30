@@ -604,7 +604,7 @@ a {
 }
 
 .p-project {
-  display: block;
+  display: flex;
 }
 .m-project {
   display: none;
