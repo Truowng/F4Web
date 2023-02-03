@@ -6,85 +6,52 @@ const serviceCardsM = document.querySelectorAll(
 );
 
 serviceTagsPC.forEach((serviceTag, index) => {
+  let colorArr = ["--blue-5", "--blue-4", "--orange", "--orange-2", "--green"];
+  let cardRect = document
+    .querySelector("#service .service-card-item")
+    .getBoundingClientRect();
   serviceTag.addEventListener("click", () => {
+    setInterval(() => {
+      let tagRect = serviceTag.getBoundingClientRect();
+
+      document.querySelector(
+        "#service .service-tag-item-smooth-container"
+      ).style.width = `${tagRect.width}px`;
+    }, 500);
+
+    let tagRect = serviceTag.getBoundingClientRect();
     document
       .querySelector("#service .service-tag-item.active")
       .classList.remove("active");
     serviceTag.classList.add("active");
+    document.querySelector(
+      "#service .service-tag-item-smooth-container"
+    ).style.left = `${tagRect.left - cardRect.left}px`;
+    // document.querySelector(
+    //   "#service .service-tag-item-smooth-container"
+    // ).style.width = `${tagRect.width}px`;
     let title = serviceTag.querySelector("p").innerText.toLowerCase();
     serviceCardsPC.forEach((serviceCard) => {
       if (serviceCard.querySelector("h4").innerText.toLowerCase() == title) {
-        if (index == 0) {
-          serviceCard.style.left = "0%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(2)"
-          ).style.left = "85%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(3)"
-          ).style.left = "88%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(4)"
-          ).style.left = "91%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(5)"
-          ).style.left = "94%";
-        } else if (index == 1) {
-          serviceCard.style.left = "3%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(1)"
-          ).style.left = "0%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(3)"
-          ).style.left = "88%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(4)"
-          ).style.left = "91%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(5)"
-          ).style.left = "94%";
-        } else if (index == 2) {
-          serviceCard.style.left = "6%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(1)"
-          ).style.left = "0%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(2)"
-          ).style.left = "3%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(4)"
-          ).style.left = "91%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(5)"
-          ).style.left = "94%";
-        } else if (index == 3) {
-          serviceCard.style.left = "9%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(1)"
-          ).style.left = "0%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(2)"
-          ).style.left = "3%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(3)"
-          ).style.left = "6%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(5)"
-          ).style.left = "94%";
-        } else if (index == 4) {
-          serviceCard.style.left = "12%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(1)"
-          ).style.left = "0%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(2)"
-          ).style.left = "3%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(3)"
-          ).style.left = "6%";
-          document.querySelector(
-            "#service .service-card-item:nth-child(4)"
-          ).style.left = "9%";
-        }
+        document.querySelector(
+          "#service .service-tag-item-smooth-container"
+        ).style.backgroundColor = `var(${colorArr[index]})`;
+        document.querySelector(
+          "#service .service-container .service-tag-item-smooth-container .service-tag-item-smooth-left"
+        ).style.backgroundColor = `var(${colorArr[index]})`;
+        document.querySelector(
+          "#service .service-container .service-tag-item-smooth-container .service-tag-item-smooth-right"
+        ).style.backgroundColor = `var(${colorArr[index]})`;
+        serviceCard.style.backgroundColor = `var(${colorArr[index]})`;
+
+        setTimeout(() => {
+          serviceCard.style.display = "flex";
+        }, 750);
+      } else {
+        serviceCard.style.backgroundColor = `var(${colorArr[index]})`;
+        setTimeout(() => {
+          serviceCard.style.display = "none";
+        }, 750);
       }
     });
   });

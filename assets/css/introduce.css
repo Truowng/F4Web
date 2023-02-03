@@ -1,0 +1,61 @@
+/* START ABOUT US */
+
+#about-us {
+  margin: 150px 0;
+}
+
+#about-us .about-us-img,
+#about-us .about-us-img img {
+  width: 100%;
+}
+
+#about-us .about-us-container {
+  padding: 0 20px;
+}
+
+#about-us .about-us-container h4 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--blue-4);
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+#about-us .about-us-container p {
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* END ABOUT US */
+
+/* START WHY CHOOSE */
+#why-choose {
+  background-color: var(--blue-4);
+  padding: 100px 0;
+  padding-top: 50px;
+}
+
+#why-choose h4 {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#why-choose .why-choose-number-container .number {
+  font-size: 120px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#why-choose .why-choose-number-container .text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+/* END WHY CHOOSE */

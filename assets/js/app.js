@@ -1,5 +1,5 @@
 const swiperLoop = new Swiper(
-  "#banner .swiper, #testimonials .swiper, .m-client .swiper",
+  "#banner .swiper, #testimonials .swiper, .m-client .swiper, #client .swiper",
   {
     // Optional parameters
     direction: "horizontal",
