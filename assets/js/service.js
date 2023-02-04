@@ -5,6 +5,66 @@ const serviceCardsM = document.querySelectorAll(
   "#m-service .service-card-item"
 );
 
+window.addEventListener("resize", () => {
+  serviceTagsPC.forEach((serviceTag, index) => {
+    let tagRect = serviceTag.getBoundingClientRect();
+
+    let colorArr = [
+      "--blue-5",
+      "--blue-4",
+      "--orange",
+      "--orange-2",
+      "--green",
+    ];
+    serviceCardsPC.forEach((serviceCardPC) => {
+      if (serviceCardPC.style.display == "flex") {
+        let serviceCardActive = serviceCardPC;
+        let cardRect = serviceCardActive.getBoundingClientRect();
+
+        console.log(tagRect.left, cardRect.left);
+        serviceTag.addEventListener("click", () => {
+          document
+            .querySelector("#service .service-tag-item.active")
+            .classList.remove("active");
+          serviceTag.classList.add("active");
+          document.querySelector(
+            "#service .service-tag-item-smooth-container"
+          ).style.left = `${tagRect.left - cardRect.left}px`;
+          document.querySelector(
+            "#service .service-tag-item-smooth-container"
+          ).style.width = `${tagRect.width}px`;
+          let title = serviceTag.querySelector("p").innerText.toLowerCase();
+          serviceCardsPC.forEach((serviceCard) => {
+            if (
+              serviceCard.querySelector("h4").innerText.toLowerCase() == title
+            ) {
+              document.querySelector(
+                "#service .service-tag-item-smooth-container"
+              ).style.backgroundColor = `var(${colorArr[index]})`;
+              document.querySelector(
+                "#service .service-container .service-tag-item-smooth-container .service-tag-item-smooth-left"
+              ).style.backgroundColor = `var(${colorArr[index]})`;
+              document.querySelector(
+                "#service .service-container .service-tag-item-smooth-container .service-tag-item-smooth-right"
+              ).style.backgroundColor = `var(${colorArr[index]})`;
+              serviceCard.style.backgroundColor = `var(${colorArr[index]})`;
+
+              setTimeout(() => {
+                serviceCard.style.display = "flex";
+              }, 750);
+            } else {
+              serviceCard.style.backgroundColor = `var(${colorArr[index]})`;
+              setTimeout(() => {
+                serviceCard.style.display = "none";
+              }, 750);
+            }
+          });
+        });
+      }
+    });
+  });
+});
+
 serviceTagsPC.forEach((serviceTag, index) => {
   let colorArr = ["--blue-5", "--blue-4", "--orange", "--orange-2", "--green"];
   let cardRect = document
