@@ -59,6 +59,15 @@ a {
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* START HEADER */
 #header {
   position: absolute;
@@ -257,7 +266,7 @@ a {
   text-transform: uppercase;
   color: var(--blue-4);
   font-weight: 800;
-  margin-bottom: 170px;
+  margin-bottom: 50px;
 }
 
 #service h4 i {
@@ -673,22 +682,28 @@ a {
 }
 
 #testimonials .swiper {
-  width: 700px;
+  width: 500px;
   overflow: visible;
   margin-top: 80px;
 }
 
 #testimonials .swiper-wrapper {
   align-items: center;
+  height: 400px;
 }
 
 #testimonials .swiper-slide {
-  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
+}
+
+#testimonials .swiper-slide.swiper-slide-active .testimonials-wrapper,
+#testimonials .swiper-slide.swiper-slide-active {
+  transform: scale(1.1);
 }
 
 #testimonials .swiper-slide .testimonials-wrapper {
@@ -696,6 +711,8 @@ a {
   box-shadow: 0 0 30px rgba(0, 0, 0, 10%);
   border-radius: 10px;
   background-color: #fff;
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
+  margin: 0 20px;
 }
 
 #testimonials .swiper-slide .testimonials-title-container {
@@ -925,8 +942,15 @@ a {
 #client .swiper-slide .client-img img {
   width: 80%;
   border-radius: 8px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 20%);
   transition: all ease 0.5s;
+}
+
+#client .client-pc {
+  display: flex;
+}
+
+#client .client-m {
+  display: none;
 }
 /* END CLIENT */
 
@@ -940,15 +964,24 @@ a {
   border-radius: 10px;
 }
 
+#testimonials .container .row {
+  margin: 0 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
 #testimonials .form-container,
 #testimonials .video-container {
   padding: 50px;
-  background-color: #fff;
 }
 
 #testimonials .video-container {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 #testimonials .form-container {
@@ -996,8 +1029,8 @@ a {
   animation: shake 0.3s ease infinite alternate;
 }
 
-#testimonials .video-container {
-  padding: 50px;
+#testimonials .video-container .video {
+  flex: 1;
 }
 
 #testimonials .video-container h4 {
