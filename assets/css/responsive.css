@@ -471,6 +471,21 @@
     margin: 25px 0;
   }
   /* END FOOTER */
+
+  /* START CONTACT FORM */
+  #contact-form {
+    margin-top: 30px;
+  }
+
+  #contact-form .contact-form-information {
+    margin-top: 50px;
+    padding: 0 10px;
+  }
+
+  #contact-form .contact-form-maps {
+    padding: 0 10px;
+  }
+  /* END CONTACT FORM */
 }
 
 @media (max-width: 400px) {
