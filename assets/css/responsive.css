@@ -486,6 +486,21 @@
     padding: 0 10px;
   }
   /* END CONTACT FORM */
+
+  /* START BLOG CATEGORY */
+  #blog-category .blog-post-img {
+    height: unset;
+  }
+
+  #blog-category .blog-category-pagination {
+    margin-bottom: 30px;
+  }
+
+  #blog-category .blog-category-pagination .button {
+    width: 40px;
+    height: 40px;
+  }
+  /* END BLOG CATEGORY */
 }
 
 @media (max-width: 400px) {
