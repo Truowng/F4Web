@@ -30,6 +30,3 @@ const swiper = new Swiper(".m-category.swiper, #vision .swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-
-export const $ = document.querySelector.bind(document);
-export const $$ = document.querySelectorAll.bind(document);

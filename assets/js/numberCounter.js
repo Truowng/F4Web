@@ -1,6 +1,6 @@
-import { $, $$ } from "./app.js";
-
-const counters = $$("#reason .reason-number-container .number");
+const counters = document.querySelectorAll(
+  "#reason .reason-number-container .number"
+);
 
 counters.forEach((counter) => {
   counter.innerText = "0";
