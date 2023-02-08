@@ -491,14 +491,18 @@
   #blog-category .blog-post-img {
     height: unset;
   }
-
+  #project .project-pagination,
   #blog-category .blog-category-pagination {
     margin-bottom: 30px;
   }
-
+  #project .project-pagination .button,
   #blog-category .blog-category-pagination .button {
     width: 40px;
     height: 40px;
+  }
+
+  #project .button {
+    padding: unset;
   }
   /* END BLOG CATEGORY */
 }
