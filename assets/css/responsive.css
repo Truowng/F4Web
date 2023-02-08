@@ -505,6 +505,13 @@
     padding: unset;
   }
   /* END BLOG CATEGORY */
+
+  /* START TEMPLATE DETAIL */
+  #template-detail .template-detail-button {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  /* END TEMPLATE DETAIL */
 }
 
 @media (max-width: 400px) {
