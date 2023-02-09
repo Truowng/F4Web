@@ -26,6 +26,27 @@
   <body>
     <div class="wrapper">
       <div class="content-wrap">
+        <!-- START SEARCH MODAL -->
+        <div id="search-modal">
+          <div class="search-modal-container">
+            <div class="search-modal-close-button">
+              <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="title">Tìm kiếm</p>
+            <input type="text" placeholder="Tìm kiếm" />
+            <p class="label">Lọc theo lĩnh vực</p>
+            <select>
+              <option value="Thiết kế">Thiết kế</option>
+              <option value="Công nghệ">Công nghệ</option>
+              <option value="Thương mại điện tử">Thương mại điện tử</option>
+              <option value="Thời trang">Thời trang</option>
+            </select>
+            <div class="search-submit-button">
+              <a href="#">Tìm kiếm</a>
+            </div>
+          </div>
+        </div>
+        <!-- END SEARCH MODAL -->
         <!-- START HEADER -->
         <div id="header">
           <div class="container">
@@ -599,6 +620,7 @@
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/searchModal.js"></script>
     <script src="./assets/js/numberCounter.js"></script>
     <script src="./assets/js/footer.js"></script>
   </body>

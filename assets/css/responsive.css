@@ -1,6 +1,36 @@
 /* MOBILE */
 
 @media (max-width: 540px) {
+  /* START SEARCH MODAL */
+  #search-modal .search-modal-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #search-modal
+    .search-modal-container
+    .label
+    #search-modal
+    .search-modal-container
+    .search-submit-button
+    a {
+    font-size: 18px;
+  }
+
+  #search-modal .search-modal-container input,
+  #search-modal .search-modal-container select {
+    font-size: 18px;
+  }
+
+  #search-modal .search-modal-container .search-modal-close-button i {
+    font-size: 25px;
+  }
+
+  #search-modal .search-modal-container .title {
+    font-size: 35px;
+  }
+  /* END SEARCH MODAL */
+
   /* START HEADER */
   .menu-container {
     display: none;
