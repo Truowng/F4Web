@@ -18,7 +18,7 @@
   text-transform: capitalize;
   margin-bottom: 40px;
   color: var(--blue-4);
-  font-weight: 800;
+  font-weight: 600;
 }
 
 #advantage .advantage-img {
@@ -94,6 +94,10 @@
 /* END ADVANTAGE */
 
 /* START PROJECT */
+#project h4 {
+  font-weight: 600;
+}
+
 #project h4 span {
   text-transform: capitalize;
 }
@@ -114,7 +118,7 @@
   text-transform: capitalize;
   margin-bottom: 20px;
   color: var(--blue-4);
-  font-weight: 800;
+  font-weight: 600;
 }
 
 #interface p {
@@ -180,7 +184,7 @@
   text-transform: capitalize;
   margin-bottom: 20px;
   color: var(--blue-4);
-  font-weight: 800;
+  font-weight: 600;
 }
 
 #advice p {
@@ -246,7 +250,7 @@
   text-transform: capitalize;
   margin-bottom: 20px;
   color: var(--blue-4);
-  font-weight: 800;
+  font-weight: 600;
 }
 
 #process .process-container {
@@ -360,7 +364,7 @@
   text-align: center;
   text-transform: capitalize;
   color: var(--blue-4);
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 
@@ -396,3 +400,330 @@
   border-radius: 10px;
 }
 /* END POINT */
+
+/* START CRITERIA */
+#criteria {
+  padding-top: 40px;
+  background-color: #f1f1f1;
+}
+
+#criteria h2 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--blue-4);
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+#criteria .criteria-item {
+  margin-bottom: 40px;
+}
+
+#criteria .criteria-img {
+  margin-bottom: 20px;
+}
+
+#criteria .criteria-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#criteria .criteria-text h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--blue-4);
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+#criteria .criteria-text p {
+  font-size: 16px;
+  font-weight: 500;
+}
+/* END CRITERIA */
+
+/* START JOB CATEGORY */
+#job-category {
+  margin-top: 80px;
+}
+
+#job-category h2 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--blue-4);
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+#job-category p {
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto 40px;
+  font-weight: 600;
+}
+
+#job-category .job-category-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-radius: 30px;
+  height: 300px;
+  margin-bottom: 25px;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+#job-category .job-category-item i {
+  font-size: 60px;
+  color: var(--blue-4);
+}
+
+#job-category .job-category-item h3 {
+  font-size: 18px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--blue-4);
+}
+/* END JOB CATEGORY */
+
+/* START REASON */
+#reason {
+  background-color: var(--blue-4);
+  padding: 100px 0;
+  padding-top: 50px;
+  margin-top: 80px;
+}
+
+#reason h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#reason .reason-number-container .number {
+  font-size: 120px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#reason .reason-number-container .text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+/* END REASON */
+
+/* START PRICE TABLE */
+#price-table {
+  margin-top: 80px;
+}
+
+#price-table h2 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--blue-4);
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+#price-table .price-table-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#price-table .price-table-img img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+/* END PRICE TABLE */
+
+/* START FORM */
+#client {
+  margin-top: 80px;
+  padding: 80px 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(9, 78, 161, 1) 100%
+  );
+}
+
+#client h2 {
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--blue-4);
+}
+
+#client .container {
+  margin-top: 100px;
+  border-radius: 10px;
+}
+
+#client .container .row {
+  margin: 0 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+#client .form-container,
+#client .video-container {
+  padding: 50px;
+}
+
+#client .video-container {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#client .form-container {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#client .form-container h3 {
+  text-align: center;
+  font-weight: 600;
+  color: var(--blue-4);
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+#client .form-container label {
+  font-weight: 500;
+}
+
+#client .form-container input,
+#client .form-container textarea {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--blue-1);
+  width: 100%;
+  margin: 0px 0 20px;
+  padding: 5px 0;
+  resize: none;
+}
+
+#client .form-container input:focus,
+#client .form-container textarea:focus {
+  border-bottom: 2px solid var(--blue-4);
+}
+
+#client .form-container .button {
+  border: 0px solid transparent;
+  padding: 8px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: var(--orange);
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  animation: shake 0.3s ease infinite alternate;
+}
+
+#client .video-container .video {
+  flex: 1;
+}
+
+#client .video-container h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--blue-4);
+  text-transform: capitalize;
+  margin-bottom: 66px;
+}
+
+/* END FORM */
+
+/* START SEO CONTENT */
+#seo-content {
+  margin-top: 80px;
+}
+
+#seo-content h2 {
+  font-size: 100px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--blue-4);
+}
+/* END SEO CONTENT */
+
+/* START BLOG */
+#blog {
+  margin-top: 80px;
+  padding: 80px 0;
+  background-color: var(--blue-4);
+}
+
+#blog h2 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+#blog .blog-item {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+#blog .blog-item-img {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+#blog .blog-item-img img {
+  width: 100%;
+  transition: all ease 0.5s;
+}
+
+#blog .blog-item-img img:hover {
+  transform: scale(1.1);
+}
+
+#blog .blog-item-text {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#blog .blog-item-text a {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#blog .blog-item-text p {
+  font-size: 16px;
+  font-weight: 500;
+}
+/* END BLOG */
+
+/* START FOOTER */
+#footer {
+  margin-top: 0;
+}
+/* END FOOTER */
