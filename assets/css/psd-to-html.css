@@ -85,8 +85,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--blue-3);
-  box-shadow: inset 5px 5px var(--blue-2);
+  background: rgb(0, 221, 255);
+  background: linear-gradient(
+    160deg,
+    rgba(0, 221, 255, 1) 0%,
+    rgba(3, 209, 255, 1) 16%,
+    rgba(16, 162, 255, 1) 42%,
+    rgba(26, 127, 255, 1) 60%,
+    rgba(32, 106, 255, 1) 77%,
+    rgba(35, 99, 255, 1) 100%
+  );
+  box-shadow: inset 5px 5px rgba(255, 255, 255, 0.6);
   border-radius: 10px;
   padding: 20px;
   width: fit-content;
@@ -175,10 +184,13 @@
 #slogan .slogan-item h3 {
   width: 80%;
   text-align: center;
+  font-size: 22px;
 }
 
 #slogan .slogan-item p {
   width: 80%;
+  font-size: 18px;
+  text-align: justify;
 }
 
 #slogan .slogan-item:nth-child(1) {
