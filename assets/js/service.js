@@ -9,13 +9,7 @@ window.addEventListener("resize", () => {
   serviceTagsPC.forEach((serviceTag, index) => {
     let tagRect = serviceTag.getBoundingClientRect();
 
-    let colorArr = [
-      "--blue-5",
-      "--blue-4",
-      "--orange",
-      "--orange-2",
-      "--green",
-    ];
+    let colorArr = ["--blue-5", "--blue-4", "--red", "--violet", "--green"];
     serviceCardsPC.forEach((serviceCardPC) => {
       if (serviceCardPC.style.display == "flex") {
         let serviceCardActive = serviceCardPC;
@@ -66,7 +60,7 @@ window.addEventListener("resize", () => {
 });
 
 serviceTagsPC.forEach((serviceTag, index) => {
-  let colorArr = ["--blue-5", "--blue-4", "--orange", "--orange-2", "--green"];
+  let colorArr = ["--blue-5", "--blue-4", "--red", "--violet", "--green"];
   let cardRect = document
     .querySelector("#service .service-card-item")
     .getBoundingClientRect();
