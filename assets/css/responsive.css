@@ -188,10 +188,10 @@
     background-color: var(--green);
   }
   #m-service .service-container .service-tag-item:nth-child(4) p {
-    background-color: var(--orange);
+    background-color: var(--red);
   }
   #m-service .service-container .service-tag-item:nth-child(5) p {
-    background-color: var(--orange-2);
+    background-color: var(--violet);
   }
 
   #m-service .service-card-container {
@@ -246,14 +246,14 @@
   }
 
   #m-service .service-card-container .service-card-item:nth-child(4) {
-    background-color: var(--orange);
+    background-color: var(--red);
     z-index: 2;
     top: calc(var(--top-dims) * 3);
     transform: scale(0.85);
   }
 
   #m-service .service-card-container .service-card-item:nth-child(5) {
-    background-color: var(--orange-2);
+    background-color: var(--violet);
     z-index: 1;
     top: calc(var(--top-dims) * 4);
     transform: scale(0.8);

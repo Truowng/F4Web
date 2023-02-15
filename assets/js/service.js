@@ -30,7 +30,7 @@ window.addEventListener("resize", () => {
           let title = serviceTag.querySelector("p").innerText.toLowerCase();
           serviceCardsPC.forEach((serviceCard) => {
             if (
-              serviceCard.querySelector("h4").innerText.toLowerCase() == title
+              serviceCard.querySelector("h3").innerText.toLowerCase() == title
             ) {
               document.querySelector(
                 "#service .service-tag-item-smooth-container"
@@ -81,12 +81,9 @@ serviceTagsPC.forEach((serviceTag, index) => {
     document.querySelector(
       "#service .service-tag-item-smooth-container"
     ).style.left = `${tagRect.left - cardRect.left}px`;
-    // document.querySelector(
-    //   "#service .service-tag-item-smooth-container"
-    // ).style.width = `${tagRect.width}px`;
     let title = serviceTag.querySelector("p").innerText.toLowerCase();
     serviceCardsPC.forEach((serviceCard) => {
-      if (serviceCard.querySelector("h4").innerText.toLowerCase() == title) {
+      if (serviceCard.querySelector("h3").innerText.toLowerCase() == title) {
         document.querySelector(
           "#service .service-tag-item-smooth-container"
         ).style.backgroundColor = `var(${colorArr[index]})`;
@@ -119,7 +116,7 @@ serviceTagsM.forEach((serviceTagM, index) => {
     serviceTagM.classList.add("active");
     let title = serviceTagM.querySelector("p").innerText.toLowerCase();
     serviceCardsM.forEach((serviceCardM) => {
-      if (serviceCardM.querySelector("h4").innerText.toLowerCase() == title) {
+      if (serviceCardM.querySelector("h3").innerText.toLowerCase() == title) {
         if (index == 0) {
           document
             .querySelector("#m-service .service-card-item.active")

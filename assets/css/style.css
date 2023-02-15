@@ -396,7 +396,7 @@ a {
   width: 100%;
 }
 
-#service h4 {
+#service h2 {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -405,7 +405,7 @@ a {
   margin-bottom: 50px;
 }
 
-#service h4 i {
+#service h2 i {
   font-size: 20px;
   margin-right: 10px;
   padding: 20px;
@@ -602,7 +602,7 @@ a {
   width: 100%;
 }
 
-#service .service-card-item-content h4,
+#service .service-card-item-content h3,
 #service .service-card-item-content .button,
 #service .service-card-item-content li {
   color: #fff;
@@ -650,7 +650,7 @@ a {
   display: none;
 }
 
-#category h4 {
+#category h2 {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -658,7 +658,7 @@ a {
   font-weight: 800;
 }
 
-#category h4 i {
+#category h2 i {
   font-size: 20px;
   margin-right: 10px;
   padding: 20px;
@@ -709,7 +709,7 @@ a {
   padding: 100px 0;
 }
 
-#testimonials h4 {
+#testimonials h2 {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -717,7 +717,7 @@ a {
   font-weight: 800;
 }
 
-#testimonials h4 i {
+#testimonials h2 i {
   font-size: 20px;
   margin-right: 10px;
   padding: 20px;
@@ -803,7 +803,7 @@ a {
   background-repeat: no-repeat;
 }
 
-#project h4 {
+#project h2 {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -811,7 +811,7 @@ a {
   font-weight: 800;
 }
 
-#project h4 i {
+#project h2 i {
   font-size: 20px;
   margin-right: 10px;
   padding: 20px;
@@ -962,7 +962,7 @@ a {
   margin-top: 80px;
 }
 
-#client h4 {
+#client h2 {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -1035,7 +1035,7 @@ a {
   border-bottom-left-radius: 10px;
 }
 
-#testimonials .form-container h4 {
+#testimonials .form-container h3 {
   text-align: center;
   font-weight: 700;
   color: var(--blue-4);
@@ -1079,7 +1079,7 @@ a {
   flex: 1;
 }
 
-#testimonials .video-container h4 {
+#testimonials .video-container h3 {
   text-align: center;
   font-weight: 700;
   font-size: 22px;
@@ -1095,7 +1095,7 @@ a {
   margin-top: 80px;
 }
 
-#faq h4 {
+#faq h2 {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -1103,7 +1103,7 @@ a {
   font-weight: 800;
 }
 
-#faq h4 i {
+#faq h2 i {
   font-size: 20px;
   margin-right: 10px;
   padding: 20px;
@@ -1196,7 +1196,7 @@ a {
   background-color: #eee;
 }
 
-#footer h4 {
+#footer h2 {
   font-weight: 700;
   color: var(--blue-4);
   font-size: 20px;
@@ -1216,7 +1216,7 @@ a {
   margin-right: 5px;
 }
 
-#footer .toggle-container h4 {
+#footer .toggle-container h2 {
   font-weight: 700;
   color: var(--blue-4);
   font-size: 20px;
