@@ -1273,6 +1273,7 @@ a {
 #footer .certificate-container a,
 #footer .relative-website-container a {
   display: block;
+  flex: 1;
 }
 
 #footer .certificate-container a img,
