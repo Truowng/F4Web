@@ -69,3 +69,14 @@ const testimonialsSwiper = new Swiper("#testimonials .testimonials-p", {
     type: "bullets",
   },
 });
+
+const blogSwiper = new Swiper("#blog .blog-m .swiper", {
+  direction: "horizontal",
+  spaceBetween: 30,
+  loop: true,
+  autoplay: { delay: 3000 },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+  },
+});

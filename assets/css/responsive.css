@@ -570,9 +570,6 @@
     height: 40px;
   }
 
-  #project .button {
-    padding: unset;
-  }
   /* END BLOG CATEGORY */
 
   /* START TEMPLATE DETAIL */
@@ -581,6 +578,45 @@
     justify-content: center;
   }
   /* END TEMPLATE DETAIL */
+
+  /* START CLIENT */
+
+  #client {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(9, 78, 161, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+  #client .form-container h3 {
+    font-size: 20px;
+  }
+
+  #client .video-container {
+    border-top: 1px dashed #ccc;
+    border-radius: 0px;
+  }
+
+  #client .video-container h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  #client .video-container {
+    padding: 25px;
+  }
+  /* END CLIENT */
+
+  /* START BLOG */
+  #blog .blog-pc {
+    display: none;
+  }
+
+  #blog .blog-m {
+    display: block;
+  }
+  /* END BLOG */
 }
 
 @media (max-width: 400px) {
