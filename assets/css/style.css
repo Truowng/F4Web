@@ -569,6 +569,7 @@ a {
   display: none;
   transform-origin: top;
   transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
+  min-height: 500px;
 }
 
 #service .service-card-container .service-card-item:nth-child(1) {
@@ -595,11 +596,22 @@ a {
 }
 
 #service .service-card-container .service-card-item .service-card-item-img {
-  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
 #service .service-card-container .service-card-item .service-card-item-img img {
-  width: 100%;
+  width: 90%;
+}
+
+#service .service-card-container .service-card-item .service-card-item-content {
+  flex: 1;
+}
+
+#service .service-card-item-content h3 {
+  font-size: 40px;
 }
 
 #service .service-card-item-content h3,
