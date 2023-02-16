@@ -634,6 +634,25 @@
   font-size: 16px;
   font-weight: 500;
 }
+
+#blog .blog-pc {
+  display: block;
+}
+
+#blog .blog-m {
+  display: none;
+}
+
+#blog .blog-m .swiper-wrapper {
+  padding-bottom: 20px;
+}
+
+#blog .swiper-pagination-fraction,
+#blog .swiper-pagination-custom,
+#blog .swiper-horizontal > .swiper-pagination-bullets,
+#blog .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}
 /* END BLOG */
 
 /* START FOOTER */
@@ -641,3 +660,65 @@
   margin-top: 0;
 }
 /* END FOOTER */
+
+/* START RESPONSIVE */
+
+/* Start Mobile */
+@media (max-width: 540px) {
+  /* START CRITERIA */
+  #criteria p {
+    margin: 30px 0;
+  }
+
+  #criteria .criteria-item {
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+  }
+  #criteria .col-lg-6:nth-child(1) .criteria-item,
+  #criteria .col-lg-6:nth-child(3) .criteria-item {
+    justify-content: unset;
+  }
+
+  #criteria .criteria-item .criteria-text {
+    width: 100%;
+    height: 200px;
+  }
+
+  #criteria .criteria-text p {
+    margin-top: 0;
+  }
+  /* END CRITERIA */
+
+  /* START POINT */
+  #point p {
+    text-align: center;
+  }
+
+  #point .point-content ul li .point-text p {
+    text-align: left;
+  }
+
+  #point .point-content ul li i {
+    margin-left: 0;
+  }
+  /* END POINT */
+
+  /* START ADVANTAGE */
+  #advantage .advantage-content-item {
+    padding: 20px;
+  }
+  #advantage .advantage-content-item i {
+    font-size: 30px;
+    margin-right: 20px;
+  }
+
+  #advantage .advantage-content-item .advantage-content-item-text h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  /* END ADVANTAGE */
+}
+/* End Mobile */
+
+/* END RESPONSIVE */
