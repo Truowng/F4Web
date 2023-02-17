@@ -238,6 +238,15 @@
   font-weight: 500;
   margin-bottom: 0;
 }
+
+#point .point-pc {
+  display: block;
+}
+
+#point .point-m {
+  display: none;
+  margin-top: 50px;
+}
 /* END POINT */
 
 /* START PROCESS */
@@ -454,11 +463,11 @@
 /* END PRICE TABLE */
 
 /* START PROJECT */
-#project h4 {
+#project h2 {
   font-weight: 600;
 }
 
-#project h4 span {
+#project h2 span {
   text-transform: capitalize;
 }
 
@@ -638,6 +647,21 @@
   font-size: 16px;
   font-weight: 500;
 }
+
+#blog .blog-m {
+  display: none;
+}
+
+#blog .blog-m .swiper-wrapper {
+  padding-bottom: 20px;
+}
+
+#blog .swiper-pagination-fraction,
+#blog .swiper-pagination-custom,
+#blog .swiper-horizontal > .swiper-pagination-bullets,
+#blog .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}
 /* END BLOG */
 
 /* START FOOTER */
@@ -645,3 +669,93 @@
   margin-top: 0;
 }
 /* END FOOTER */
+
+/* START REPSONSIVE */
+/* Start Mobile */
+@media (max-width: 540px) {
+  /* START DEFINE */
+  #define {
+    margin-top: 50px;
+  }
+
+  #define .define-content {
+    margin-top: 30px;
+  }
+  /* END DEFINE */
+
+  /* START CRITERIA */
+  #criteria {
+    margin-top: 50px;
+  }
+
+  #criteria .col-lg-6 {
+    height: fit-content;
+  }
+
+  #criteria .criteria-item .criteria-text {
+    width: 100%;
+    height: 100%;
+    padding: 40px 20px;
+  }
+  /* END CRITERIA */
+
+  /* START PRICE */
+  #price-table .price-table-img img {
+    width: 100%;
+  }
+  /* END PRICE */
+
+  /* START POINT */
+  #point .point-pc {
+    display: none;
+  }
+
+  #point .point-m {
+    display: block;
+  }
+
+  #point .point-m .point-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: var(--blue-4);
+    align-items: center;
+    height: 400px;
+    justify-content: space-around;
+  }
+
+  #point .point-heading h3 {
+    font-size: 25px;
+  }
+
+  #point .point-m .point-heading i,
+  #point .point-m .point-heading h3,
+  #point .point-m .point-heading p {
+    color: #fff;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  #point .point-m .swiper-wrapper {
+    padding-bottom: 40px;
+  }
+
+  #point .point-m .swiper-slide {
+    height: 100%;
+  }
+
+  #point .point-m .swiper-pagination {
+    bottom: 0;
+  }
+  /* END POINT */
+
+  /* START BLOG */
+  #blog .blog-m {
+    display: block;
+  }
+  /* END BLOG */
+}
+/* End Mobile */
+/* END REPSONSIVE */

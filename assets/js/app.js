@@ -80,3 +80,14 @@ const blogSwiper = new Swiper("#blog .blog-m .swiper", {
     type: "bullets",
   },
 });
+
+const pointSwiper = new Swiper("#point .point-m .swiper", {
+  direction: "horizontal",
+  spaceBetween: 30,
+  loop: true,
+  autoplay: { delay: 3000 },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+  },
+});

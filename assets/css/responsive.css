@@ -120,7 +120,7 @@
     position: relative;
   }
 
-  #m-service h4 {
+  #m-service h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,11 +128,11 @@
     gap: 20px;
   }
 
-  #m-service h4 i {
+  #m-service h2 i {
     width: fit-content;
   }
 
-  #m-service h4 i span {
+  #m-service h2 i span {
     display: block;
     text-align: center;
   }
@@ -145,7 +145,7 @@
     width: 100%;
   }
 
-  #m-service h4 {
+  #m-service h2 {
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
@@ -154,7 +154,7 @@
     margin-bottom: 50px;
   }
 
-  #m-service h4 i {
+  #m-service h2 i {
     font-size: 20px;
     margin-right: 10px;
     padding: 20px;
@@ -220,7 +220,7 @@
     padding: 20px;
     border-radius: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    min-width: 100%;
+    width: 100%;
     transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
     left: 0;
   }
@@ -294,7 +294,7 @@
     opacity: 1;
   }
 
-  #m-service .service-card-item-content h4,
+  #m-service .service-card-item-content h3,
   #m-service .service-card-item-content .button,
   #m-service .service-card-item-content li {
     color: #fff;
@@ -303,7 +303,7 @@
     font-weight: 600;
   }
 
-  #m-service .service-card-item-content h4 {
+  #m-service .service-card-item-content h3 {
     margin-top: 20px;
     text-align: center;
 
