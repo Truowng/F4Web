@@ -415,6 +415,98 @@
 
 /* END PROCESS */
 
+/* START CONTENT SERVICE */
+#content-service {
+  margin-top: 80px;
+}
+
+#content-service h2 {
+  text-align: center;
+  color: var(--blue-4);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#content-service p {
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto 40px;
+  font-weight: 600;
+}
+
+#content-service .content-service-wrapper {
+  margin: 150px 0;
+}
+
+#content-service .content-service-container {
+  display: flex;
+  align-items: center;
+  gap: 250px;
+  justify-content: center;
+}
+
+#content-service .content-service-container:nth-child(2) {
+  justify-content: space-between;
+  gap: unset;
+}
+
+#content-service .content-service-item {
+  overflow: hidden;
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#content-service .content-service-item .content-service-img img {
+  height: 100%;
+}
+
+#content-service .content-service-item .content-service-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#content-service .content-service-item .content-service-text {
+  opacity: 0;
+  transition: all ease 0.3s;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 20px;
+}
+
+#content-service .content-service-item .content-service-text:hover {
+  opacity: 1;
+}
+
+#content-service .content-service-item .content-service-text h3 {
+  font-size: 18px;
+  color: var(--blue-4);
+  text-align: center;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+#content-service .content-service-item .content-service-text p {
+  font-size: 16px;
+  color: var(--blue-4);
+  margin-bottom: 0;
+}
+
+/* EBD CONTENT SERVICE */
+
 /* START REASON */
 #reason {
   background-color: var(--blue-4);
