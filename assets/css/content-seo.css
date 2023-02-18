@@ -425,6 +425,7 @@
   color: var(--blue-4);
   font-size: 30px;
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 #content-service p {
@@ -817,6 +818,76 @@
     font-size: 40px;
   }
   /* END JOB CATEGORY */
+
+  /* START CONTENT SERVICE */
+  #content-service .content-service-wrapper {
+    margin: 50px 0 0;
+  }
+
+  #content-service .container {
+    padding: 0;
+  }
+  #content-service h2,
+  #content-service p {
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #content-service .content-service-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #content-service .content-service-container:last-of-type {
+    flex-direction: column-reverse;
+  }
+
+  #content-service .content-service-item {
+    width: 100%;
+    height: 200%;
+    border-radius: unset;
+  }
+
+  #content-service .content-service-item .content-service-img img {
+    width: 100%;
+  }
+
+  #content-service .content-service-item .content-service-text:hover {
+    opacity: 1;
+  }
+
+  #content-service
+    .content-service-container
+    .content-service-item:nth-of-type(2n + 1)
+    .content-service-text {
+    background-color: #ddddddcf;
+    opacity: 1;
+  }
+
+  #content-service
+    .content-service-container
+    .content-service-item:nth-of-type(2n)
+    .content-service-text {
+    background-color: #094ea1b3;
+    opacity: 1;
+  }
+
+  #content-service
+    .content-service-container
+    .content-service-item:nth-of-type(2n)
+    .content-service-text
+    * {
+    color: #fff;
+  }
+  /* END CONTENT SERVICE */
+
+  /* START REASON */
+  #reason {
+    margin-top: 0;
+  }
+  /* END REASON */
 }
 /* End Mobile */
 /* END RESPONSIVE */
