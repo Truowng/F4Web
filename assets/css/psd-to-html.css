@@ -226,7 +226,7 @@
 #point .point-container::after {
   content: "";
   position: absolute;
-  width: 33%;
+  width: 47%;
   height: 79%;
   border-radius: 100%;
   border: 2px solid var(--blue-4);
@@ -253,24 +253,24 @@
 }
 
 #point .point-heading-row:nth-child(2) .col-lg-6:nth-child(1) .point-heading {
-  transform: translateX(16%);
+  transform: translateX(1%);
 }
 #point .point-heading-row:nth-child(2) .col-lg-6:nth-child(2) .point-heading {
-  transform: translateX(-15%);
+  transform: translateX(1%);
 }
 
 #point .point-heading-row:nth-child(3) .col-lg-6:nth-child(1) .point-heading {
-  transform: translateX(9%);
+  transform: translateX(-9%);
 }
 #point .point-heading-row:nth-child(3) .col-lg-6:nth-child(2) .point-heading {
-  transform: translateX(-10%);
+  transform: translateX(9%);
 }
 
 #point .point-heading-row:nth-child(4) .col-lg-6:nth-child(1) .point-heading {
-  transform: translateX(9%);
+  transform: translateX(-9%);
 }
 #point .point-heading-row:nth-child(4) .col-lg-6:nth-child(2) .point-heading {
-  transform: translateX(-8%);
+  transform: translateX(11%);
 }
 
 #point .point-heading-row:nth-child(5) .point-heading {

@@ -127,7 +127,7 @@
 #point .point-container::after {
   content: "";
   position: absolute;
-  width: 33%;
+  width: 47%;
   height: 79%;
   border-radius: 100%;
   border: 2px solid var(--blue-4);
@@ -158,17 +158,17 @@
 }
 
 #point .point-heading-row:nth-child(2) .col-lg-6:nth-child(1) .point-heading {
-  transform: translateX(6%);
+  transform: translateX(-13%);
 }
 #point .point-heading-row:nth-child(2) .col-lg-6:nth-child(2) .point-heading {
-  transform: translateX(-10%);
+  transform: translateX(8%);
 }
 
 #point .point-heading-row:nth-child(3) .col-lg-6:nth-child(1) .point-heading {
-  transform: translateX(10%);
+  transform: translateX(-7%);
 }
 #point .point-heading-row:nth-child(3) .col-lg-6:nth-child(2) .point-heading {
-  transform: translateX(-12%);
+  transform: translateX(3%);
 }
 
 #point .point-heading-row:nth-child(4) .point-heading {
