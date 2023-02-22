@@ -216,9 +216,8 @@ a {
 }
 
 #header .logo {
-  width: 80px;
+  width: 300px;
   display: block;
-  padding: 10px;
 }
 
 #header .logo img {
