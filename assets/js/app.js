@@ -1,5 +1,5 @@
 const swiperLoop = new Swiper(
-  "#banner .banner-m, #client .swiper.client-m, #people .swiper, #testimonials .testimonials-m",
+  "#banner .banner-m, #client .swiper.client-m,#people .people-leader .people-leader-m, #people .people-employee .swiper #testimonials .testimonials-m",
   {
     // Optional parameters
     direction: "horizontal",
@@ -86,6 +86,21 @@ const pointSwiper = new Swiper("#point .point-m .swiper", {
   spaceBetween: 30,
   loop: true,
   autoplay: { delay: 3000 },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+  },
+});
+
+const peopleSwiper = new Swiper("#people .people-leader .people-leader-p", {
+  // Optional parameters
+  direction: "horizontal",
+  slidesPerView: 3,
+  spaceBetween: 200,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",

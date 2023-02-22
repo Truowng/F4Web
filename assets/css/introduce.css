@@ -236,16 +236,32 @@
   font-size: 20px;
 }
 
-#people .people-leader-img {
+#people .people-leader-p .people-leader-img {
   position: relative;
-  width: 80%;
+  width: 100%;
   overflow: hidden;
   border-radius: 10px;
 }
 
-#people .swiper-slide-active .people-leader-img-text,
-#people .people-leader-img:hover .people-leader-img-text {
+#people .people-leader-m .people-leader-img {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+}
+
+#people .people-leader-m .swiper-slide-active .people-leader-img-text,
+#people .people-leader-m .people-leader-img:hover .people-leader-img-text {
   bottom: 0;
+}
+
+#people .people-leader-p .swiper-slide-next .people-leader-img-text,
+#people .people-leader-p .people-leader-img:hover .people-leader-img-text {
+  bottom: 0;
+}
+
+#people .people-leader-p .swiper-slide-next {
+  transform: scale(1.2);
 }
 
 #people .people-leader-img img {
@@ -274,20 +290,41 @@
   font-weight: 500;
 }
 
-#people .swiper {
-  width: 500px;
+#people .people-leader-p {
+  max-width: 80vw;
+  width: 100%;
   overflow: visible;
 }
 
-#people .swiper-wrapper {
+#people .people-leader-p .swiper-wrapper {
   align-items: center;
 }
 
-#people .swiper-slide {
-  width: 50%;
+#people .people-leader-p .swiper-slide {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all ease 0.5s;
+  margin: 50px 0;
+}
+
+#people .people-leader-m .swiper {
+  max-width: 500px;
+  width: 100%;
+  overflow: visible;
+}
+
+#people .people-leader-m .swiper-wrapper {
+  align-items: center;
+}
+
+#people .people-leader-m .swiper-slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.5s;
 }
 
 #people .people-employee {
@@ -317,6 +354,10 @@
 }
 
 #people .people-employee .swiper {
+  display: none;
+}
+
+#people .people-leader .people-leader-m {
   display: none;
 }
 
@@ -433,6 +474,13 @@
 
   #people .people-employee-img img {
     width: 100%;
+  }
+
+  #people .people-leader .people-leader-m {
+    display: block;
+  }
+  #people .people-leader .people-leader-p {
+    display: none;
   }
   /* END PEOPLE */
 }
