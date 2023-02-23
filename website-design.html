@@ -48,7 +48,7 @@
         </div>
         <!-- END SEARCH MODAL -->
         <!-- START HEADER -->
-        <div id="header">
+      <div id="header">
           <div class="container">
             <a href="#" class="logo">
               <img
@@ -76,8 +76,24 @@
             </div>
             <!-- Start mobile menu -->
             <div class="m-menu">
-              <div class="menu-btn">
+              <div class="menu-btn" onclick="openMenu()">
                 <i class="fa-solid fa-bars"></i>
+              </div>
+              <div class="m-menu-modal">
+                <div class="m-menu-close-btn" onclick="closeMenu()">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="menu-container">
+                  <a href="#" class="menu-link">Trang chủ</a>
+                  <a href="#" class="menu-link">Giới thiệu</a>
+                  <a href="#" class="menu-link"
+                    >Dịch vụ <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <a href="#" class="menu-link">Giao diện Website </a>
+                  <a href="#" class="menu-link"
+                    >Blog & Tin tức <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                </div>
               </div>
             </div>
             <!-- End mobile menu -->
@@ -1550,6 +1566,7 @@
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/header.js"></script>
     <script src="./assets/js/searchModal.js"></script>
     <script src="./assets/js/numberCounter.js"></script>
     <script src="./assets/js/service.js"></script>
